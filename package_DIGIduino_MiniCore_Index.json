@@ -16,7 +16,7 @@
           "category": "Arduino",
           "url": "https://github.com/theprintablewatch/DIGIduino-MiniCore/releases/download/v1.0.0/DIGIduino-MiniCore-1.0.0.tar.bz2",
           "archiveFileName": "DIGIduino-MiniCore-1.0.0.tar.bz2",
-          "checksum": "SHA-256:ec3334c30709aa9098b771f464302775756cd2f63a57db4f34253588f9ce129",
+          "checksum": "SHA-256:ec3334c30709aa9098b771f464302775756cd2f63a57db4f34253588f9ce129b",
           "size": 60700772,
           "boards": [
             { "name": "ATmega328P @ 8 MHz (internal)" }
