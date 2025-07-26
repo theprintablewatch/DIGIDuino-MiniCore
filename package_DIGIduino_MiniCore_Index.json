@@ -17,7 +17,7 @@
           "url": "https://github.com/theprintablewatch/DIGIDuino-MiniCore/releases/download/v1.0.1/DIGIduino-MiniCore-1.0.1.tar.bz2",
           "archiveFileName": "DIGIduino-MiniCore-1.0.1.tar.bz2",
           "checksum": "SHA-256:c4c8f1071be48700d2bd40340494702234930e4c2db13813feded1b3391f0822",
-          "size": 38752256,
+          "size": 3482856,
           "boards": [
             { "name": "DIGIduino V1" }
           ],
