@@ -1,7 +1,9 @@
 # DIGIduino - MiniCore
-[![MiniCore forum thread](https://img.shields.io/badge/support-forum-blue.svg)](https://forum.arduino.cc/index.php?topic=412070.0)
+
 
 ## This is a fork of MiniCore, to prevent setting the incorrect clock frequency on DIGIduino boards, I have removed any unnecessary chip and clock options.
+
+
 
 
 An Arduino core for the ATmega328, ATmega168, ATmega88, ATmega48 and ATmega8, all running the [Urboot](#write-to-own-flash) bootloader.  
