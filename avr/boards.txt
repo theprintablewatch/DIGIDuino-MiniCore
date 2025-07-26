@@ -5,6 +5,7 @@
 ## This is the file where fuse settings, clock frequencies, upload ports, bootloaders and                ##
 ## compiler flags are located.                                                                           ##
 ##                                                                                                       ##
+## Forked and modified by TPW for DIGIduino Boards                                                       ##
 ###########################################################################################################
 
 # Menu options
@@ -16,7 +17,7 @@ menu.BOD=BOD
 #############################
 
 # General
-328.name=ATmega328
+328.name=DIGIduinoV1
 328.upload.tool=avrdude
 328.upload.maximum_data_size=2048
 328.bootloader.tool=avrdude
