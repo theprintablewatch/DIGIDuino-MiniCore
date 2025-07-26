@@ -10,16 +10,16 @@
       },
       "platforms": [
         {
-          "name": "DIGIduino AVR Boards",
+          "name": "DIGIduino Boards",
           "architecture": "avr",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "Arduino",
-          "url": "https://github.com/theprintablewatch/DIGIDuino-MiniCore/releases/download/v1.0/DIGIduino-MiniCore-1.0.0.tar.bz2",
-          "archiveFileName": "DIGIduino-MiniCore-1.0.0.tar.bz2",
-          "checksum": "SHA-256:e5f0b9e7f4801a9d0a2ea22d67024dd32e7210bac7f3cc9f0aae83e311039145",
-          "size": 60700772,
+          "url": "https://github.com/theprintablewatch/DIGIDuino-MiniCore/releases/download/v1.0.1/DIGIduino-MiniCore-1.0.1.tar.bz2",
+          "archiveFileName": "DIGIduino-MiniCore-1.0.1.tar.bz2",
+          "checksum": "SHA-256:c4c8f1071be48700d2bd40340494702234930e4c2db13813feded1b3391f0822",
+          "size": 38752256,
           "boards": [
-            { "name": "ATmega328P @ 8 MHz (internal)" }
+            { "name": "DIGIduino V1" }
           ],
           "toolsDependencies": []
         }
