@@ -19,7 +19,7 @@
           "checksum": "SHA-256:c4c8f1071be48700d2bd40340494702234930e4c2db13813feded1b3391f0822",
           "size": 3482856,
           "boards": [
-            { "name": "DIGIduino V1" }
+            { "name": "DIGIduinoV1" }
           ],
           "toolsDependencies": []
         }
