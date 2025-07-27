@@ -4,7 +4,7 @@
       "name": "DIGIduino",
       "maintainer": "The Printable Watch",
       "websiteUrl": "https://github.com/theprintablewatch",
-      "Url": "",
+      "Url": "https://github.com/theprintablewatch/DIGIduino-MiniCore/releases/download/v1.0.1/DIGIduino-1.0.1.tar.bz2",
       "email": "",
       "platforms": [
         {
@@ -13,10 +13,10 @@
           "version": "1.0.1",
           "deprecated": false,
           "category": "Contributed",
-          "url": "https://MCUdude.github.io/MiniCore/MiniCore-3.1.1.tar.bz2",
+          "url": "https://github.com/theprintablewatch/DIGIduino-MiniCore/releases/download/v1.0.1/DIGIduino-1.0.1.tar.bz2",
           "archiveFileName": "DIGIduino-1.0.1.tar.bz2",
-          "checksum": "SHA-256:7aa3adc0209da349dcc814c0f662f52c4e047c8927eec6f0e09927615aa34ce1",
-          "size": "3500061",
+          "checksum": "SHA-256:6172d6c205dcb6d3dca85583a50b381381299e277716a02769a8ab232885283f",
+          "size": "3122673",
           "boards": [
             {
               "name": "DIGIduinoV1"
