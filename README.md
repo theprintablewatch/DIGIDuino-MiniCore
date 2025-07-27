@@ -3,7 +3,7 @@
 
 ## This is a fork of MiniCore, to prevent setting the incorrect clock frequency on DIGIduino boards, I have removed any unnecessary chip and clock options.
 
-
+Currently work in progress and not working
 
 
 An Arduino core for the ATmega328, ATmega168, ATmega88, ATmega48 and ATmega8, all running the [Urboot](#write-to-own-flash) bootloader.  
