@@ -1,0 +1,30 @@
+{
+  "packages": [
+    {
+      "name": "DIGIduino",
+      "maintainer": "James Cox",
+      "websiteURL": "https://github.com/theprintablewatch",
+      "email": "info@theprintablewatch.com",
+      "help": {
+        "online": "https://github.com/theprintablewatch/DIGIDuino-MiniCore/issues"
+      },
+      "platforms": [
+        {
+          "name": "DIGIduino Boards",
+          "architecture": "avr",
+          "version": "1.0.1",
+          "category": "Arduino",
+          "url": "https://github.com/theprintablewatch/DIGIDuino-MiniCore/releases/download/v1.0.1/DIGIduino-MiniCore-1.0.1.tar.bz2",
+          "archiveFileName": "DIGIduino-MiniCore-1.0.1.tar.bz2",
+          "checksum": "SHA-256:234bf4b97f9aa6295e2361e568e2a749b4fa2bb84ea39182f0b7c33ee9ddc7bd",
+          "size": 3482856,
+          "boards": [
+            { "name": "DIGIduinoV1" }
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools": []
+    }
+  ]
+}

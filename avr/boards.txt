@@ -1,78 +1,46 @@
-###########################################################################################################
-## This file is created by MCUdude for use with MiniCore                                                 ##
-## https://github.com/MCUdude/MiniCore                                                                   ##
-##                                                                                                       ##
-## This is the file where fuse settings, clock frequencies, upload ports, bootloaders and                ##
-## compiler flags are located.                                                                           ##
-##                                                                                                       ##
-## Forked and modified by TPW for DIGIduino Boards                                                       ##
-###########################################################################################################
-
-# Menu options
-
+menu.clock=Clock
 menu.BOD=BOD
+menu.eeprom=EEPROM
+menu.variant=Chip Variant
 
-#############################
-#### ATmega328/A/P/PA/PB ####
-#############################
-
-# General
 328.name=DIGIduinoV1
+
 328.upload.tool=avrdude
+328.upload.protocol=arduino
+328.upload.speed=38400
+328.upload.maximum_size=32256
 328.upload.maximum_data_size=2048
+
 328.bootloader.tool=avrdude
-328.bootloader.unlock_bits=0xff
-328.bootloader.lock_bits=0xff
-328.build.core=MCUdude_corefiles
+328.bootloader.low_fuses=0xE2
+328.bootloader.high_fuses=0xD7
+328.bootloader.extended_fuses=0xF7
+328.bootloader.file=optiboot_flash/bootloaders/optiboot_atmega328.hex
+328.bootloader.unlock_bits=0x3F
+328.bootloader.lock_bits=0x0F
+
+328.build.mcu=atmega328p
+328.build.f_cpu=8000000L
 328.build.board=AVR_ATmega328
-328.build.bootloader_led=led+b5
-328.build.extra_flags={build.clkpr}
+328.build.core=MCUdude_corefiles
+328.build.variant=standard
 
-# Upload port select
-328.menu.bootloader.uart0=Yes (UART0)
-328.menu.bootloader.uart0.upload.maximum_size=32384
-328.menu.bootloader.uart0.upload.protocol=urclock
-328.menu.bootloader.uart0.upload.uartpins=uart0_rxd0_txd1
-328.menu.bootloader.uart0.build.export_merged_output=true
-328.menu.bootloader.uart0.bootloader.file=urboot/{build.mcu}/watchdog_1_s/autobaud/{upload.uartpins}/{build.bootloader_led}/urboot_{build.mcu}_pr_ee_ce.hex
+328.menu.clock.8MHz_internal=Internal 8 MHz
+328.menu.clock.8MHz_internal.bootloader.low_fuses=0xE2
+328.menu.clock.8MHz_internal.build.f_cpu=8000000L
 
-# EEPROM
+328.menu.BOD.1v8=BOD 1.8V
+328.menu.BOD.1v8.bootloader.extended_fuses=0xF6
+
+328.menu.BOD.disabled=BOD Disabled
+328.menu.BOD.disabled.bootloader.extended_fuses=0xF7
+
 328.menu.eeprom.keep=EEPROM retained
 328.menu.eeprom.keep.bootloader.high_fuses=0xd7
 
+328.menu.eeprom.erase=EEPROM not retained
+328.menu.eeprom.erase.bootloader.high_fuses=0xdf
 
-# Baud rate
-328.menu.baudrate.38400=38400
-328.menu.baudrate.38400.upload.speed=38400
-
-
-# Variants
 328.menu.variant.modelP=328P / 328PA
-328.menu.variant.modelP.bootloader.cksel_bits=0111
-328.menu.variant.modelP.bootloader.cfd_bit=1
 328.menu.variant.modelP.build.variant=standard
 328.menu.variant.modelP.build.mcu=atmega328p
-
-# Brown out detection
-328.menu.BOD.1v8=BOD 1.8V
-328.menu.BOD.1v8.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}110
-328.menu.BOD.disabled=BOD  disabled
-328.menu.BOD.disabled.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}111
-
-# Compiler link time optimization
-328.menu.LTO.Os_flto=LTO enabled
-328.menu.LTO.Os_flto.compiler.c.extra_flags=-Wextra -flto -g
-328.menu.LTO.Os_flto.compiler.c.elf.extra_flags=-w -flto -g
-328.menu.LTO.Os_flto.compiler.cpp.extra_flags=-Wextra -flto -g
-328.menu.LTO.Os_flto.ltoarcmd=avr-gcc-ar
-
-# Clock frequencies
-
-328.menu.clock.8MHz_internal=Internal 8 MHz
-328.menu.clock.8MHz_internal.upload.default_speed=38400
-328.menu.clock.8MHz_internal.bootloader.low_fuses=0xe2
-328.menu.clock.8MHz_internal.build.clkpr=
-328.menu.clock.8MHz_internal.build.f_cpu=8000000L
-
-
-
